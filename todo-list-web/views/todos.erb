@@ -1,0 +1,39 @@
+<h1>Items in the todo list</h1>
+<table>
+  <thead>
+    <th>
+      Name
+    </th>
+    <th>
+      Category
+    </th>
+    <th>
+      Deadline
+    </th>
+    <th>
+      Completed?
+    </th>
+  </thead>
+
+  <% for @item in @items %>
+    <tr>
+      <td>
+        <%= @item.name %>
+      </td>
+      <td>
+        <%= @item.category %>
+      </td>
+      <td>
+        <%= @item.deadline %>
+      </td>
+      <td>
+        <%= @item.completed %>
+      </td>
+
+    </tr>
+  <% end %>
+</table>
+
+<ul>
+<li><a href="/">Homepage</a></li>
+</ul>
